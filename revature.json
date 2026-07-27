@@ -1,0 +1,25 @@
+{
+  "type": "python",
+  "testFiles": [
+    {
+      "path": "tests/lab_test.py",
+      "testCases": [
+        {
+          "methodName": "test_activity_find_employees_and",
+          "label": "Verify AND filtering",
+          "description": "Runs problem1(), which should return employees named 'Steve' earning more than $75,000."
+        },
+        {
+          "methodName": "test_activity_find_employees_or",
+          "label": "Verify OR filtering",
+          "description": "Runs problem2(), which should return employees earning more than $100,000 or less than $50,000."
+        },
+        {
+          "methodName": "test_activity_find_employees_not_in",
+          "label": "Verify NOT IN filtering",
+          "description": "Runs problem3(), which should return employees earning more than $50,000 who are not named 'Steve'."
+        }
+      ]
+    }
+  ]
+}
