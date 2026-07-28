@@ -47,9 +47,9 @@ def _seeded_connection():
         # boundary rows below - each sits exactly on a threshold used somewhere in this lab, and each also
         # matches every OTHER condition in the query it's meant to test, so it actually catches ">" vs ">="
         # (and "<" vs "<=") mistakes instead of being silently filtered out for an unrelated reason:
-        "('Steve', 'Cutoff75', 75000.00),"
-        "('Casey', 'Cutoff50', 50000.00),"
-        "('Jordan', 'Cutoff100', 100000.00);"
+        "('Steve', 'Turner', 75000.00),"
+        "('Casey', 'Bennett', 50000.00),"
+        "('Jordan', 'Reyes', 100000.00);"
     )
     conn.commit()
     return conn, cur
@@ -65,7 +65,9 @@ def problem1():
     |3     |'Steve'         |'Jones'        |99890.99  |
     |4     |'Brandon'       |'Smith'        |120000    |
     |5     |'Adam'          |'Jones'        |55050.50  |
-    |6     |'Casey'         |'Boundary'     |75000.00  |
+    |6     |'Steve'         |'Turner'       |75000.00  |
+    |7     |'Casey'         |'Bennett'      |50000.00  |
+    |8     |'Jordan'        |'Reyes'        |100000.00 |
 
     Problem 1: Write a statement that will query the above table for all employees named 'Steve' who earn
     more than $75,000.

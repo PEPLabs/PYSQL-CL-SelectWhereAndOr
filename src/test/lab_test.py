@@ -41,7 +41,7 @@ class LabTest(unittest.TestCase):
         expected_set = {
             Employee(5, "Adam", "Jones", 55050.50),
             Employee(4, "Brandon", "Smith", 120000),
-            Employee(8, "Jordan", "Cutoff100", 100000.00),
+            Employee(8, "Jordan", "Reyes", 100000.00),
         }
 
         result_set = problem3()
